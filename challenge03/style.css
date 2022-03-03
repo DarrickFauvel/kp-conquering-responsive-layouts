@@ -9,26 +9,34 @@
 *,
 *::before,
 *::after {
-  margin: 0;
   box-sizing: border-box;
+}
+
+* {
+  margin: 0;
 }
 
 body {
   font-family: 'Roboto', sans-serif;
+}
+
+.main {
   background-color: var(--bg-primary);
   color: #fff;
 }
 
 .container {
   margin-inline: calc((122 / 16) * 1em);
+  padding-block: calc((148 / 16) * 1em);
+  max-width: 750px;
+  margin-inline: auto;
 }
 
 .content {
-  margin-block: calc((148 / 16) * 1em);
-  line-height: 1.1;
-
   display: grid;
   gap: 3em;
+
+  line-height: 1.1;
   width: 75%;
 }
 
@@ -51,4 +59,9 @@ a {
   font-weight: 700;
   width: fit-content;
   text-transform: uppercase;
+}
+
+a:hover,
+a:focus {
+  box-shadow: inset 0 0 0 3px yellow;
 }
