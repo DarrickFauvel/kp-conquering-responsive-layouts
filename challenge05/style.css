@@ -12,80 +12,118 @@
 
 */
 
-*, *::before, *::after {
-    box-sizing: border-box;
+:root {
+  font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 body {
-    margin: 0;
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.3rem;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 2.1rem;
 }
 
 img {
-    max-width: 100%;
+  max-width: 100%;
 }
 
 h1 {
-    font-size: 3rem;
-    margin-top: 0;
+  margin-top: 0;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
 .container {
-    width: 80%;
-    max-width: 1100px;
-    margin: 0 auto;
+  width: 80%;
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
 .row {
-    /* display: flex => flex container */
-    display: flex;
-    justify-content: space-between;
-    
-    /* can't use yet */
-    /* gap: 100px; */
+  /* display: flex => flex container */
+  display: flex;
+  justify-content: space-between;
+
+  /* can't use yet */
+  /* gap: 100px; */
 }
 
 .col {
-    /* these are now flex items */
-    width: 100%;
+  /* these are now flex items */
+  width: 100%;
 }
 
 .col + .col {
-    margin-left: 30px;
-}
-
-.hero {
-    padding: 100px 0;
-    background-color: #23424A;
-    color: #FFF;
-}
-
-.hero__text { 
-    width: 62%;
-}
-
-.hero__img {
-    width: 32%;
-    align-self: flex-start;
-}
-
-.hero p {
-    margin-bottom: 3em;
+  margin-left: 30px;
 }
 
 .btn {
-    display: inline-block;
-    text-decoration: none;
-    text-transform: uppercase; 
-    color: #23424A;
-    font-weight: 900;
-    background-color: #38CFD9;
-    padding: .75em 2em;
-    border-radius: 100px;
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #23424a;
+  font-weight: 900;
+  background-color: #38cfd9;
+  padding: 0.75em 2em;
+  border-radius: 100px;
 }
 
 .btn:hover,
 .btn:focus {
-    opacity: .75; 
+  opacity: 0.75;
+}
+
+/* Hero section */
+.hero {
+  padding: 100px 0;
+  background-color: #23424a;
+  color: #fff;
+}
+
+.hero__text {
+  width: 62%;
+}
+
+.hero__text h1 {
+  font-size: 4.8rem;
+}
+
+.hero__img {
+  width: 32%;
+  align-self: flex-start;
+}
+
+.hero p {
+  margin-bottom: 3em;
+}
+
+/* Qualities section */
+.qualities {
+  margin-top: 2em;
+}
+
+.qualities h2 {
+  font-size: 3.6rem;
+}
+
+.article h2 {
+  color: #136c72;
+}
+
+.quality__items {
+  display: grid;
+  gap: 1em;
+  background-color: #136c72;
+  color: white;
+  padding-inline: 2em;
+  text-align: center;
 }
