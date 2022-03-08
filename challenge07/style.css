@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&family=Roboto:wght@300;400&display=swap');
+
+:root {
+  font-size: 62.5%;
+
+  --color1: #f3eed9;
+  --color2: #824936;
+  --color3: #222c2a;
+
+  --ff-primary: 'Playfair Display', sans-serif;
+  --ff-secondary: 'Roboto', sans-serif;
+
+  --fw-light: 300;
+  --fw-regular: 400;
+  --fw-black: 900;
+
+  --font1: var(--fw-light) 1.8rem var(--ff-secondary);
+  --font2: var(--fw-black) 6rem var(--ff-primary);
+  --font3: var(--fw-black) 3.6rem var(--ff-primary);
+  --font4: var(--fw-regular) 2.1rem var(--ff-secondary);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font: var(--font4);
+  margin: 0;
+}
+
+p {
+  line-height: 1.5;
+}
+
+h2 {
+  font: var(--font3);
+  margin-top: 0;
+}
+
+.container {
+  max-width: 1128px;
+  margin-inline: 4em;
+}
+
+.split {
+  display: flex;
+  gap: 2em;
+}
+
+.split > * {
+  width: 50%;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 660px;
+  background-color: var(--color1);
+  text-align: center;
+}
+
+.hero span {
+  font: var(--font1);
+}
+.hero h1 {
+  font: var(--font2);
+  color: var(--color2);
+  margin-top: 0.25em;
+  line-height: 1;
+}
+
+.section {
+  padding-block: 4em;
+}
+
+.section-quality h2 {
+  text-align: center;
+  color: var(--color2);
+}
+
+.section-custom {
+  background-color: var(--color3);
+  color: var(--color1);
+}
+
+.section-created {
+  background-color: var(--color2);
+  color: var(--color1);
+}
