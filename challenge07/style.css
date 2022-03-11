@@ -47,11 +47,11 @@ h2 {
 
 .split {
   display: flex;
-  gap: 2em;
+  flex-direction: column;
 }
 
 .split > * {
-  width: 50%;
+  width: 100%;
 }
 
 .hero {
@@ -91,4 +91,23 @@ h2 {
 .section-created {
   background-color: var(--color2);
   color: var(--color1);
+}
+
+.section-created .split {
+  flex-direction: column-reverse;
+}
+
+@media (min-width: 970px) {
+  .split {
+    flex-direction: row;
+    gap: 2em;
+  }
+
+  .split > * {
+    width: 50%;
+  }
+
+  .section-created .split {
+    flex-direction: row;
+  }
 }
